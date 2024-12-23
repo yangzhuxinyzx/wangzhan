@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">您的名字</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#media">自媒体</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+    <!-- 添加进度指示器 -->
+    <div class="progress-container">
+        <div class="progress-dots">
+            <div class="dot" data-section="home"></div>
+            <div class="dot" data-section="about"></div>
+            <div class="dot" data-section="media"></div>
+            <div class="dot" data-section="contact"></div>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="product-title">
+                <h2 class="subtitle">个人主页</h2>
+                <h1 class="headline">创意无限 梦想无界</h1>
+            </div>
+            
+            <!-- 添加3D展示区域 -->
+            <div class="showcase-container">
+                <a href="design.html" class="showcase-item parallax-element" data-speed="0.2">
+                    <img src="path-to-design-work.jpg" alt="设计作品" class="showcase-image">
+                    <div class="showcase-text">
+                        <h3>创意设计</h3>
+                        <p>突破传统，创造独特</p>
+                    </div>
+                </a>
+                <a href="development.html" class="showcase-item parallax-element" data-speed="0.3">
+                    <img src="path-to-dev-work.jpg" alt="开发作品" class="showcase-image">
+                    <div class="showcase-text">
+                        <h3>技术开发</h3>
+                        <p>专注细节，追求完美</p>
+                    </div>
+                </a>
+                <a href="art.html" class="showcase-item parallax-element" data-speed="0.4">
+                    <img src="path-to-art-work.jpg" alt="艺术作品" class="showcase-image">
+                    <div class="showcase-text">
+                        <h3>艺术创作</h3>
+                        <p>融合艺术，传递价值</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 添加技能指标 -->
+            <div class="skills-highlights">
+                <div class="skill-stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">年设计经验</div>
+                </div>
+                <div class="skill-stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">成功项目</div>
+                </div>
+                <div class="skill-stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">客户满意度</div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <div class="scroll-hint">向下滚动探索更多</div>
+                <div class="cta-buttons">
+                    <a href="#about" class="cta-button">了解更多</a>
+                    <a href="#contact" class="cta-button outline">联系我</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 添加动态背景 -->
+        <div class="hero-background">
+            <div class="grid-background"></div>
+            <div class="gradient-spheres">
+                <div class="sphere sphere-1"></div>
+                <div class="sphere sphere-2"></div>
+                <div class="sphere sphere-3"></div>
+            </div>
+            <div class="stars">
+                <!-- 使用 JavaScript 动态生成星星 -->
+            </div>
+            <div class="shooting-stars">
+                <!-- 使用 JavaScript 动态生成流星 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="content-background"></div>
+        <!-- 添加粒子效果 -->
+        <div class="particles" id="particles"></div>
+        
+        <!-- 添加动态光效 -->
+        <div class="glow-effects">
+            <div class="glow" style="--size: 500px; --color: 64,87,255; --duration: 8s; --min-opacity: 0.1; --max-opacity: 0.3; top: 20%; left: 10%;"></div>
+            <div class="glow" style="--size: 400px; --color: 255,61,87; --duration: 12s; --min-opacity: 0.1; --max-opacity: 0.2; top: 60%; right: 15%;"></div>
+            <div class="glow" style="--size: 600px; --color: 255,187,61; --duration: 10s; --min-opacity: 0.05; --max-opacity: 0.15; bottom: 10%; left: 30%;"></div>
+        </div>
+        
+        <!-- 添加波纹容器 -->
+        <div class="ripple-container" id="rippleContainer"></div>
+        
+        <div class="content-wrapper">
+            <h2 class="section-title fade-in">关于我</h2>
+            <div class="about-intro">
+                <div class="about-text fade-in">
+                    <p class="intro-text">我是一名充满激情的创意工作者</p>
+                    <p class="description">专注于用户体验设计和前端开发，致力于创造优秀的数字体验。5年+的设计开发经验，擅长将创意转化为现实。</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="path-to-your-profile.jpg" alt="个人照片" class="profile-pic">
+                </div>
+            </div>
+
+            <!-- 技能特长部分 -->
+            <div class="section-block">
+                <h3 class="block-title fade-in">技能特长</h3>
+                <div class="skills-container">
+                    <div class="skill-category fade-in">
+                        <h4>开发技能</h4>
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-skill="90%">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar" data-skill="85%">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar" data-skill="80%">
+                                <span class="skill-name">React/Vue</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 创作理念部分 -->
+            <div class="section-block">
+                <h3 class="block-title fade-in">创作理念</h3>
+                <div class="concept-principles">
+                    <div class="principle-item slide-in">
+                        <i class="fas fa-user-circle"></i>
+                        <h4>以用户为中心</h4>
+                        <p>深入理解用户需求，创造有价值的体验</p>
+                    </div>
+                    <div class="principle-item slide-in">
+                        <i class="fas fa-gem"></i>
+                        <h4>追求完美细节</h4>
+                        <p>关注每个细节，打造精致的作品</p>
+                    </div>
+                    <div class="principle-item slide-in">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>创新思维</h4>
+                        <p>突破常规，探索创新的解决方案</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 个人风格部分 -->
+            <div class="section-block">
+                <h3 class="block-title fade-in">个人风格</h3>
+                <div class="style-gallery">
+                    <div class="style-item fade-in">
+                        <img src="path-to-work1.jpg" alt="作品展示">
+                        <div class="style-info">
+                            <h4>简约设计</h4>
+                            <p>追求简洁清晰的设计语言</p>
+                        </div>
+                    </div>
+                    <div class="style-item fade-in">
+                        <img src="path-to-work2.jpg" alt="作品展示">
+                        <div class="style-info">
+                            <h4>现代感</h4>
+                            <p>融合现代设计趋势</p>
+                        </div>
+                    </div>
+                    <div class="style-item fade-in">
+                        <img src="path-to-work3.jpg" alt="作品展示">
+                        <div class="style-info">
+                            <h4>创新元素</h4>
+                            <p>加入独特的创意元素</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 工作经历部分 -->
+            <div class="experience-section">
+                <h3 class="section-subtitle fade-in">工作经历</h3>
+                <div class="timeline">
+                    <div class="timeline-item slide-in">
+                        <div class="timeline-content">
+                            <h4>高级前端开发工程师</h4>
+                            <p class="company">某科技公司</p>
+                            <p class="period">2020 - 至今</p>
+                            <ul class="achievements">
+                                <li>负责公司核心产品的前端开发</li>
+                                <li>优化用户体验，提升产品转化率</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 添加更多工作经历 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="content-section">
+        <div class="parallax-bg media-bg"></div>
+        <div class="content-wrapper">
+            <h2 class="section-title fade-in">自媒体作品</h2>
+            <div class="media-grid">
+                <div class="media-card">
+                    <div class="media-icon">
+                        <i class="fab fa-weixin"></i>
+                    </div>
+                    <h3>微信号</h3>
+                    <div class="contact-info">
+                        <p class="contact-number">18178319615</p>
+                        <p class="contact-tip">欢迎添加我的微信</p>
+                    </div>
+                </div>
+                
+                <div class="media-card">
+                    <div class="media-icon">
+                        <i class="fab fa-qq"></i>
+                    </div>
+                    <h3>QQ</h3>
+                    <div class="contact-info">
+                        <p class="qq-number">2935076541</p>
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=2935076541&site=qq&menu=yes" class="contact-button">
+                            添加好友
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="media-card">
+                    <div class="media-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3>抖音号</h3>
+                    <div class="contact-info">
+                        <p class="douyin-id">抖音号: your-douyin-id</p>
+                        <div class="qr-code">
+                            <!-- 这里放置您的抖音二维码图片 -->
+                            <img src="path-to-douyin-qr.jpg" alt="抖音二维码">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-info">
+            <h2>联系方式</h2>
+            <p>邮箱：your@email.com</p>
+            <div class="social-links">
+                <!-- 社交媒体链接 -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html> 
